@@ -105,3 +105,15 @@ var numberTimes = function() {
     }
 }
 numberTimes();
+//11. Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function//
+//the string “hello”, it should return “olleh”. Test your function on a few inputs, including the empty string.//
+var reverso = function(word) {
+    var Switch = "";
+    for (var i=(word.length-1);i>=0;i--) {
+        Switch = Switch + word[i];
+    }
+    console.log(Switch);
+}
+reverso("bizarro");
+reverso("");
+reverso("flame");
