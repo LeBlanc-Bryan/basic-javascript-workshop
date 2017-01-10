@@ -81,7 +81,7 @@ console.log(repeatStuff(7,"Magic Man"));
 console.log(repeatStuff("super", "man"));
 //8. Write a function that uses a for loop to print the numbers from 1 to 10 inclusively.//
 var printTen = function() {
-    for(var i=0; i<=10; i++) {
+    for(var i=1; i<=10; i++) {
         console.log(i);
     }
 }
