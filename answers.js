@@ -21,4 +21,6 @@ var wordNumber = function(a,b) {
     return a[(b-1)];
     //a = string, b = number//
 };
-console.log (wordNumber("Mark", 2));
+console.log(wordNumber("Mark", 2));
+console.log(wordNumber("Jessie", 5));
+console.log(wordNumber("",5));
