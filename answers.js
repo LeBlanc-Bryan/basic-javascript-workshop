@@ -86,3 +86,12 @@ var printTen = function() {
     }
 }
 printTen();
+//9.Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, but as words ("one", "two", …).//
+//As an extra challenge, try to find a solution that does not use an if/else//
+var wordNums = ["one","two","three" ,"four","five","six","seven","eight","nine","ten"]
+var printTenAgain = function() {
+    for(var i=0; i<=9; i++) {
+        console.log(wordNums[i]);
+    }
+}
+printTenAgain();
