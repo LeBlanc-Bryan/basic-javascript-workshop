@@ -33,3 +33,12 @@ console.log(addTwo(3,4));
 console.log(addTwo(17,101));
 console.log(addTwo("Banana", "Phone"));
 //When I passed some strings to the function it put them together as BananaPhone.//
+//5. Write a function that takes two numbers and multiplies them together. Test your function on a few inputs.//
+//Write in your comments what happens when you pass something other than a number to your function.//
+var product = function(n1,n2) {
+    return n1*n2;
+};
+console.log(product(3,4));
+console.log(product(20,10));
+console.log(product("Face", "Book"));
+//When I passed some strings it puts out NaN - not a number.//
