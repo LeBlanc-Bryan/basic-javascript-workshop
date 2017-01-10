@@ -16,7 +16,7 @@ console.log(lastChar("GoodBye"));
 console.log(lastChar("nothing"));
 console.log(lastChar(""));
 //3. Write a function that takes a string and a number, and returns the character at the position represented by the number.//
-//The indexing of number should start at 0. Test your function on a few inputs, including the empty string//
+//The indexing of number should start at 0. Test your function on a few inputs, including the empty string.//
 var wordNumber = function(a,b) {
     return a[(b-1)];
     //a = string, b = number//
@@ -24,3 +24,12 @@ var wordNumber = function(a,b) {
 console.log(wordNumber("Mark", 2));
 console.log(wordNumber("Jessie", 5));
 console.log(wordNumber("",5));
+//4. Write a function that takes two numbers and adds them together. Test your function on a few inputs.// 
+//Write in the comments what happens when you pass something other than a number to your function.//
+var addTwo = function(one,two) {
+    return (one + two);
+};
+console.log(addTwo(3,4));
+console.log(addTwo(17,101));
+console.log(addTwo("Banana", "Phone"));
+//When I passed some strings to the function it put them together as BananaPhone.//
