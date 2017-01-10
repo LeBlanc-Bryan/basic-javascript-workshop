@@ -135,3 +135,20 @@ console.log(factorial(1));
 console.log(factorial(0));
 console.log(factorial(13));
 console.log(factorial(-20));
+//13. Write a function that takes a phrase as a string, and returns the longest word in that phrase.// 
+//If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.//
+var longWord = function(phrase) {
+    var words = phrase.split(" ");
+    var long = 0;
+    var answer = "";
+    for (var i=0;i<words.length;i++) {
+        if (long < words[i].length) {
+            long = words[i].length;
+            answer = words[i];
+        }
+        }
+        return answer;
+    }
+    console.log(longWord("How many times?"));
+    console.log(longWord("The pen is mightier than the sword."));
+    console.log(longWord("gftdsr five twenty"));
