@@ -67,3 +67,15 @@ console.log(arithmetic(4,5,"subtract"));
 console.log(arithmetic(5,7,"mult"));
 console.log(arithmetic(10,5,"div"));
 console.log(arithmetic(3,6,"bagels"));
+//7. Write a function that takes a string and a number, and returns the string repeated that many number of times.// 
+//Test your function with various inputs.//
+var repeatStuff = function(repeats, stuff) {
+    var outPut = "";
+    for(var i=0; i<repeats; i++) {
+        outPut = outPut + " " + stuff;
+}
+return outPut;
+}
+console.log(repeatStuff(5,"Chinese Checkers"));
+console.log(repeatStuff(7,"Magic Man"));
+console.log(repeatStuff("super", "man"));
