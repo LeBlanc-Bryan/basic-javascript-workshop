@@ -117,3 +117,21 @@ var reverso = function(word) {
 reverso("bizarro");
 reverso("");
 reverso("flame");
+//12. Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1.//
+//The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.//
+var factorial = function(x) {
+    if( x < 0 ) {
+        return undefined;
+    }
+    else {
+    }
+    var multi = 1;
+    for(var i=x; i>=1;i--) {
+        multi = multi * i;
+    }
+    return multi;
+}
+console.log(factorial(1));
+console.log(factorial(0));
+console.log(factorial(13));
+console.log(factorial(-20));
