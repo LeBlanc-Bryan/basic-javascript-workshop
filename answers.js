@@ -95,3 +95,13 @@ var printTenAgain = function() {
     }
 }
 printTenAgain();
+//10. Write a function that uses a for loop to print the numbers from 1 to 10 inclusively,//
+//but for each number, print it that many number of times.//
+var numberTimes = function() {
+    for (var i=1;i<=10;i++) {
+        for (var j=1;j<=i;j++) {
+            console.log(i);
+        }
+    }
+}
+numberTimes();
