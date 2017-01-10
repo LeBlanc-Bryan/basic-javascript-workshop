@@ -42,3 +42,28 @@ console.log(product(3,4));
 console.log(product(20,10));
 console.log(product("Face", "Book"));
 //When I passed some strings it puts out NaN - not a number.//
+//6. Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers.//
+//If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product.//
+//If the string is ‘div’, return the ratio. Otherwise return 0.//
+var arithmetic = function(x,y,operator) {
+    if (operator === "add") {
+        return x+y;
+    }
+    else if (operator === "subtract") {
+        return Math.abs(x-y);
+    }
+    else if (operator === "mult") {
+        return x*y;
+    }
+    else if (operator === "div") {
+        return x/y;
+    }
+    else {
+        return 0;
+    }
+};
+console.log(arithmetic(3,7,"add"));
+console.log(arithmetic(4,5,"subtract"));
+console.log(arithmetic(5,7,"mult"));
+console.log(arithmetic(10,5,"div"));
+console.log(arithmetic(3,6,"bagels"));
